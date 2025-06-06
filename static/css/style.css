@@ -235,7 +235,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--blue);
+  color: var(--black);
 }
 
 .filter-row select,
@@ -257,7 +257,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: transparent;
-  accent-color: var(--blue);
+  accent-color: var(--black);
   display: block;
 }
 
