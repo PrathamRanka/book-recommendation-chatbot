@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "The Great Gatsby",
+        "price": "₹399",
+        "category": "Fiction",
+        "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.5,
+        "bestseller": true
+    },
+    {
+        "id": 2,
+        "name": "Data Structures in C",
+        "price": "₹499",
+        "category": "Educational",
+        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.0,
+        "bestseller": false
+    },
+    {
+        "id": 3,
+        "name": "To Kill a Mockingbird",
+        "price": "₹350",
+        "category": "Fiction",
+        "image": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+        "rating": 4.8,
+        "bestseller": true
+    },
+    {
+        "id": 4,
+        "name": "1984",
+        "price": "₹299",
+        "category": "Dystopian",
+        "image": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+        "rating": 4.7,
+        "bestseller": true
+    },
+    {
+        "id": 5,
+        "name": "Introduction to Algorithms",
+        "price": "₹799",
+        "category": "Educational",
+        "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.6,
+        "bestseller": false
+    },
+    {
+        "id": 6,
+        "name": "The Catcher in the Rye",
+        "price": "₹450",
+        "category": "Fiction",
+        "image": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+        "rating": 4.2,
+        "bestseller": false
+    },
+    {
+        "id": 7,
+        "name": "The Alchemist",
+        "price": "₹399",
+        "category": "Fiction",
+        "image": "https://covers.openlibrary.org/b/id/8108691-L.jpg",
+        "rating": 4.5,
+        "bestseller": true
+    },
+    {
+        "id": 8,
+        "name": "Sapiens: A Brief History of Humankind",
+        "price": "₹599",
+        "category": "Non-Fiction",
+        "image": "https://covers.openlibrary.org/b/id/8370226-L.jpg",
+        "rating": 4.9,
+        "bestseller": true
+    },
+    {
+        "id": 9,
+        "name": "Educated",
+        "price": "₹499",
+        "category": "Memoir",
+        "image": "https://covers.openlibrary.org/b/id/9259256-L.jpg",
+        "rating": 4.8,
+        "bestseller": false
+    },
+    {
+        "id": 10,
+        "name": "Becoming",
+        "price": "₹599",
+        "category": "Memoir",
+        "image": "https://covers.openlibrary.org/b/id/9259257-L.jpg",
+        "rating": 4.7,
+        "bestseller": true
+    },
+    {
+        "id": 11,
+        "name": "Atomic Habits",
+        "price": "₹550",
+        "category": "Self-Help",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.8,
+        "bestseller": true
+    },
+    {
+        "id": 12,
+        "name": "The Power of Now",
+        "price": "₹399",
+        "category": "Self-Help",
+        "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.6,
+        "bestseller": false
+    },
+    {
+        "id": 13,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "price": "₹699",
+        "category": "Fantasy",
+        "image": "https://covers.openlibrary.org/b/id/7984916-L.jpg",
+        "rating": 4.9,
+        "bestseller": true
+    },
+    {
+        "id": 14,
+        "name": "The Hobbit",
+        "price": "₹499",
+        "category": "Fantasy",
+        "image": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+        "rating": 4.8,
+        "bestseller": true
+    },
+    {
+        "id": 15,
+        "name": "The Subtle Art of Not Giving a F*ck",
+        "price": "₹350",
+        "category": "Self-Help",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.3,
+        "bestseller": true
+    },
+    {
+        "id": 16,
+        "name": "The Girl on the Train",
+        "price": "₹399",
+        "category": "Mystery",
+        "image": "https://covers.openlibrary.org/b/id/8370227-L.jpg",
+        "rating": 4.1,
+        "bestseller": false
+    },
+    {
+        "id": 17,
+        "name": "Gone Girl",
+        "price": "₹499",
+        "category": "Mystery",
+        "image": "https://covers.openlibrary.org/b/id/8370228-L.jpg",
+        "rating": 4.4,
+        "bestseller": true
+    },
+    {
+        "id": 18,
+        "name": "Thinking, Fast and Slow",
+        "price": "₹650",
+        "category": "Non-Fiction",
+        "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.7,
+        "bestseller": false
+    },
+    {
+        "id": 19,
+        "name": "Rich Dad Poor Dad",
+        "price": "₹299",
+        "category": "Finance",
+        "image": "https://images.unsplash.com/photo-1515168833906-d2a3b82b3029?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.5,
+        "bestseller": true
+    },
+    {
+        "id": 20,
+        "name": "The Lean Startup",
+        "price": "₹550",
+        "category": "Business",
+        "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.6,
+        "bestseller": false
+    }
+]

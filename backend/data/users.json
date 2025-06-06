@@ -1,0 +1,127 @@
+[
+    {
+        "user_id": 1,
+        "username": "john_doe",
+        "reading_history": [
+            {
+                "book_id": 1,
+                "title": "The Great Gatsby",
+                "rating": 5
+            },
+            {
+                "book_id": 2,
+                "title": "Data Structures in C",
+                "rating": 4
+            },
+            {
+                "book_id": 7,
+                "title": "The Alchemist",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "genres": ["Fiction", "Educational"],
+            "price_range": {
+                "min": 0,
+                "max": 500
+            },
+            "ratings": [4, 5]
+        }
+    },
+    {
+        "user_id": 2,
+        "username": "jane_smith",
+        "reading_history": [
+            {
+                "book_id": 3,
+                "title": "To Kill a Mockingbird",
+                "rating": 5
+            },
+            {
+                "book_id": 4,
+                "title": "1984",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "genres": ["Dystopian", "Fiction"],
+            "price_range": {
+                "min": 100,
+                "max": 600
+            },
+            "ratings": [5]
+        }
+    },
+    {
+        "user_id": 3,
+        "username": "alex_reader",
+        "reading_history": [
+            {
+                "book_id": 8,
+                "title": "Sapiens: A Brief History of Humankind",
+                "rating": 5
+            },
+            {
+                "book_id": 18,
+                "title": "Thinking, Fast and Slow",
+                "rating": 4
+            }
+        ],
+        "preferences": {
+            "genres": ["Non-Fiction", "Self-Help"],
+            "price_range": {
+                "min": 300,
+                "max": 700
+            },
+            "ratings": [4, 5]
+        }
+    },
+    {
+        "user_id": 4,
+        "username": "maria_fantasy",
+        "reading_history": [
+            {
+                "book_id": 13,
+                "title": "Harry Potter and the Sorcerer's Stone",
+                "rating": 5
+            },
+            {
+                "book_id": 14,
+                "title": "The Hobbit",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "genres": ["Fantasy"],
+            "price_range": {
+                "min": 400,
+                "max": 800
+            },
+            "ratings": [5]
+        }
+    },
+    {
+        "user_id": 5,
+        "username": "sam_mystery",
+        "reading_history": [
+            {
+                "book_id": 16,
+                "title": "The Girl on the Train",
+                "rating": 4
+            },
+            {
+                "book_id": 17,
+                "title": "Gone Girl",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "genres": ["Mystery", "Thriller"],
+            "price_range": {
+                "min": 200,
+                "max": 600
+            },
+            "ratings": [4, 5]
+        }
+    }
+]

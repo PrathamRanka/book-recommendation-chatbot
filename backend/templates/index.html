@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookBot – Your Futuristic Bookshop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <header class="chat-header glassy">
+    <div class="logo-anim">
+      <!-- <span class="book-loader"></span> -->
+      <span class="logo-text">BookBot</span>
+    </div>
+    <p class="subtitle">Your smart book shopping assistant</p>
+  </header>
+
+  <main class="main-grid">
+    <section class="chat-section glassy">
+      <div id="chat-box" class="chat-box"></div>
+      <div class="input-box glassy">
+        <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off" />
+        
+      </div>
+      <div id="suggestions" class="suggestions-dropdown"></div>
+    </section>
+
+    <aside class="filters glassy">
+      <div class="filter-row">
+        <label for="genre-filter"><span class="icon">📚</span>Genre</label>
+        <select id="genre-filter" class="glassy">
+          <option value="">All</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="educational">Educational</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="mystery">Mystery</option>
+        </select>
+      </div>
+      <div class="filter-row">
+        <label for="price-range"><span class="icon">💸</span>Price</label>
+        <input type="range" id="price-range" min="0" max="1000" value="0" step="50" />
+        <span id="price-value" class="glow-label">₹1000</span>
+      </div>
+      <div class="filter-row">
+        <label for="rating-filter"><span class="icon">⭐</span>Rating</label>
+        <select id="rating-filter" class="glassy">
+          <option value="">All</option>
+          <option value="4">4 Stars & Up</option>
+          <option value="3">3 Stars & Up</option>
+        </select>
+      </div>
+      <div class="filter-row">
+        <label class="bestseller-label">
+          <input type="checkbox" id="bestseller-toggle" />
+          <span class="icon">🔥</span>Bestseller Only
+        </label>
+      </div>
+      <div class="filter-row">
+        <label for="sort-filter"><span class="icon">🔀</span>Sort</label>
+        <select id="sort-filter" class="glassy">
+          <option value="">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Animated Book Loader (hidden by default, show via JS if needed) -->
+  <div id="loader" class="book-loader-anim" style="display:none;">
+    <span class="book-loader"></span>
+  </div>
+</body>
+</html>

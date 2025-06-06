@@ -1,0 +1,449 @@
+/* === Root Variables for Pure Black & White Theme === */
+:root {
+  --black: #18181b;
+  --white: #fff;
+  --gray: #f3f4f6;
+  --radius: 20px;
+  --shadow: 0 8px 32px 0 rgba(24,24,27,0.10);
+  --transition: 0.18s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* === Background & Fonts === */
+body {
+  font-family: 'Poppins', 'Orbitron', Arial, sans-serif;
+  background: var(--white);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+.bg-gradient {
+  display: none;
+}
+
+/* === Header === */
+.chat-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius) var(--radius) 0 0;
+  box-shadow: var(--shadow);
+  padding: 2.5rem 0 1.2rem 0;
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  position: relative;
+  border-bottom: 2px solid var(--black);
+}
+
+.logo-anim {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-text {
+  font-family: 'Orbitron', 'Poppins', Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2.5px;
+  color: var(--black);
+  text-shadow: 0 2px 24px #0001, 0 1px 2px var(--black);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.book-loader {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 4px solid var(--black);
+  border-top: 4px solid var(--white);
+  background: transparent;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
+
+.subtitle {
+  color: var(--black);
+  font-size: 1.1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* === Main Grid Layout === */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2vw 0 2vw;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.2rem 2vw 0 2vw;
+  }
+  .filters {
+    order: -1;
+    width: 100%;
+  }
+}
+
+/* === Glassy card effect === */
+.glassy {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1.5px solid #e5e5e5;
+}
+
+/* === Chat Section === */
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1.5px solid #e5e5e5;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 1.2rem;
+  background: #fafafa;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #0001;
+  margin-bottom: 1rem;
+  font-size: 1.08rem;
+  color: var(--black);
+}
+
+/* === Input Box === */
+.input-box {
+  display: flex;
+  border: 1px solid #222;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 1px 8px #0001;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.input-box input:focus {
+  background: #f3f4f6;
+}
+
+.glow-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Orbitron', 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  box-shadow: 0 2px 18px #0002;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  text-transform: uppercase;
+}
+.glow-btn:hover, .glow-btn:focus {
+  background: #222;
+  transform: scale(1.07);
+  box-shadow: 0 4px 32px #0002;
+}
+
+/* === Suggestions Dropdown === */
+.suggestions-dropdown {
+  margin-top: 0.5rem;
+  background: var(--white);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 2px 16px #0001;
+  color: var(--black);
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  left: 0; right: 0; top: 100%;
+  z-index: 10;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.suggestions-dropdown.active {
+  display: block;
+}
+.suggestions-dropdown .dropdown-item {
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background var(--transition);
+}
+.suggestions-dropdown .dropdown-item:last-child {
+  border-bottom: none;
+}
+.suggestions-dropdown .dropdown-item:hover {
+  background: var(--black);
+  color: #fff;
+}
+
+/* === Filters Sidebar === */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1.5px solid #e5e5e5;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.filter-row label {
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--blue);
+}
+
+.filter-row select,
+.filter-row input[type="range"] {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.filter-row input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background: transparent;
+  accent-color: var(--blue);
+  display: block;
+}
+
+.filter-row select:focus,
+.filter-row input[type="range"]:focus {
+  border-color: var(--black);
+  box-shadow: 0 0 0 2px #222;
+}
+
+.bestseller-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+#price-value {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 0.3rem;
+  color: var(--black);
+}
+
+/* === Loader Styles === */
+.book-loader,
+.book-loader-anim {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e5e5e5;
+  border-top: 3px solid var(--black);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.book-loader-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+
+/* === Book Cards === */
+.book-card {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 18px #0001, 0 1.5px 8px #0001;
+  margin: 1.2rem 0;
+  padding: 1rem 1.5rem;
+  gap: 1.2rem;
+  transition: box-shadow var(--transition), transform var(--transition);
+  border: 2px solid #e5e5e5;
+}
+.book-card:hover {
+  box-shadow: 0 6px 36px #0002, 0 2px 16px #0002;
+  transform: translateY(-6px) scale(1.04);
+  border: 2px solid var(--black);
+}
+
+.img-wrapper {
+  width: 60px;
+  height: 90px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 0 1px 10px #0001;
+}
+
+.book-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.6rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.book-img.loaded {
+  opacity: 1;
+}
+
+.book-info {
+  flex: 1;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--black);
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.star {
+  color: #222;
+  margin-left: 10px;
+  font-size: 1.15em;
+}
+
+.bestseller-tag {
+  background: #222;
+  color: var(--white);
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-left: 14px;
+  font-weight: bold;
+  box-shadow: 0 1px 8px #0001;
+}
+
+/* === Chat Bubbles === */
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin: 14px 0;
+  animation: fadeIn 0.5s;
+}
+.message.user {
+  flex-direction: row-reverse;
+}
+.avatar {
+  font-size: 2em;
+  margin: 0 12px;
+}
+.bubble {
+  max-width: 70%;
+  padding: 1rem 1.3rem;
+  border-radius: 1.2rem;
+  background: var(--black);
+  color: #fff;
+  font-size: 1.08em;
+  box-shadow: 0 2px 16px #0001;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+}
+.message.user .bubble {
+  background: #222;
+  color: #fff;
+}
+
+/* === Utility === */
+.icon {
+  font-size: 1.1rem;
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 600px) {
+  .chat-header {
+    padding: 1rem;
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .main-grid {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .filters {
+    order: -1;
+    width: 100%;
+    padding: 1rem;
+  }
+  .chat-section {
+    padding: 1rem;
+  }
+  .book-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem 0.7rem;
+  }
+  .img-wrapper {
+    width: 48px;
+    height: 70px;
+    margin-bottom: 0.5rem;
+  }
+}
